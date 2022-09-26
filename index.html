@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newadventure</title>
-</head>
-<body>
-    <h1>NEW ADVENTURE</h1>
-    <p>Explore a hidden gem</p>
-    <h2>City Trip</h2>
-    <p>Choose Location</p>
-    <ul>Kanton Aargau</ul>
-        <li a href="baden.html">Baden</li>
-    <h2>Connect to Nature</h2>
-    <p>Choose Location</p>
-    <ul>Kanton Aargau</ul>
-        <li a href="zofingen.html">Zofingen</li>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>newadventure</title>
+    </head>
+    <body>
+        <header>
+            <h1>NATURE ADVENTURE</h1>
+            <p>Explore a hidden gem</p>
+            <nav>
+                <a href="#home">Home</a>|
+                <a href="#adventure">The Adventure</a>|
+                <a href="#about">About</a>|
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <h2>The Adventure</h2>
+            <p>There are a lot of nice places to visit in Switzerland. There are also many <em>reasons</em> why we should explore them.</p>
+            <p></p>
+            <p>These are the main category that I collected based on my trip. Let's explore!</p>
+            <ul>
+            <li><a href="mountain.html">Mountain</a><img src="img/mountain.JPG" alt="mountain" width="200"></li>
+            
+            <li><a href="water-pearl.html">Water Pearl</a><img src="img/waterfall.JPG" alt="waterfall" width="200"></li>
+            
+            <li><a href="city.html">Charming City</a><img src="img/city.JPG" alt="city" width="200"></li>
+  
+            </ul>
+            <section class="about">
+                <hr>
+                <h2>About</h2>
+                <p>Hi, I am Ari. Enjoy exploring a new place and food. I am happy to share my experiencea and get a new experience from others! Feel free to contact me and share your adventures too. Maybe you have found a new gem to be explore in your surrounding.</p>
+                <table style="border: 1px solid black;">
+                    <tr>
+                        <th>Name</th>
+                        <td>Ari</td>
+                    </tr>
+                    <tr>
+                        <th>Origin</th>
+                        <td>Indonesia</td>
+                    </tr>
+                </table>
+            </section>
+            <br>
+            <section>
+                <h2>Get in Touch</h2>
+                <form>
+                    <fieldset>
+                        <legend>Your contact information</legend>
+                        <label for="name">Your name:</label> <br>
+                        <input type="text" id="name" name="name" autofocus><br>
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" name="email"> <br>
+                        <label for="comments">Your Comments</label> <br>
+                        <textarea name="comments" id="comments"></textarea><br>
+                        <label><input type="checkbox" id="subscribe" name="subscribe">Add me to your email list</label><br>
+                        <input type="hidden" id="send_to" name="send_to" value="yourEmailHere">
+                    </fieldset>
+                </form>
+            </section>
+            </main>
+        <footer>
+            <p>© ariani 2022</p>
+        </footer>
+    </body>
 </html>
