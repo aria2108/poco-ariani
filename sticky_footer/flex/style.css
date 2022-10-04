@@ -44,6 +44,7 @@ p {
     padding: 0 4px;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
 }
 
 .content {
@@ -57,18 +58,10 @@ p {
     margin-top: 8px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1500px) {
     .container {
-        flex: 50%;
-        max-width: 50%;
+        max-width: 800px;
     }
-}
-
-@media screen and (max-width:600px) {
-    .container {
-        flex: 100%;
-        max-width: 100%;
-    }    
 }
 
 /* --------form------------- */
