@@ -4,67 +4,58 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../project/style/style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap" rel="stylesheet">
+
         <title>nextadventure</title>
     </head>
     <body>
         <header>
-            <h1>NEXT ADVENTURE</h1>
-            <p>Explore a hidden gem</p>
-            <nav>
+            <img src="../project/img/logo.png" alt="logo">
+            <nav class="navbar">
                 <a href="#home">Home</a>|
                 <a href="#adventure">The Adventure</a>|
                 <a href="#about">About</a>|
+                <a href="#getintouch"></a>
             </nav>
         </header>
         <main>
-            <hr>
-            <h2>The Adventure</h2>
-            <p>There are a lot of nice places to visit in Switzerland. There are also many <em>reasons</em> why we should explore them.</p>
-            <p></p>
-            <p>These are the main category that I collected based on my trip. Let's explore!</p>
-            <ul>
-            <li><a href="mountain.html">Mountain</a><img src="img/mountain.JPG" alt="mountain" width="200"></li>
-            
-            <li><a href="water-pearl.html">Water Pearl</a><img src="img/waterfall.JPG" alt="waterfall" width="200"></li>
-            
-            <li><a href="city.html">Charming City</a><img src="img/city.JPG" alt="city" width="200"></li>
-  
-            </ul>
-            <section class="about">
+            <!-- Home with slideshow-images -->
+            <div id="slide-bg">
+                <h1>Where to go next?</h1>
+            </div>
+
+            <section id="adventure">
+                <h2>The Adventure</h2>
+                <p>There are a lot of nice places to visit in Switzerland. There are also many <em>reasons</em> why we should explore them.</p>
+                <p></p>
+                <p>These are the main category that I collected based on my trip. Let's explore!</p>
+            </section>
+
+            <section id="about">
                 <hr>
                 <h2>About</h2>
-                <p>Hi, I am Ari. Enjoy exploring a new place and food. I am happy to share my experiencea and get a new experience from others! Feel free to contact me and share your adventures too. Maybe you have found a new gem to be explore in your surrounding.</p>
-                <table style="border: 1px solid black;">
-                    <tr>
-                        <th>Name</th>
-                        <td>Ari</td>
-                    </tr>
-                    <tr>
-                        <th>Origin</th>
-                        <td>Indonesia</td>
-                    </tr>
-                </table>
+                <p>Hi, I am Ari. Enjoy exploring a new place and food. I am happy to share my experiences and get a new experience from others! Let's get in touch and share your adventures too. Maybe you have found a new gem to be explore in your surrounding.</p>
             </section>
             <br>
-            <section>
+            <section id="getintouch">
                 <h2>Get in Touch</h2>
                 <form>
-                    <fieldset>
-                        <legend>Your contact information</legend>
                         <label for="name">Your name:</label> <br>
                         <input type="text" id="name" name="name" autofocus><br>
                         <label for="email">Email</label> <br>
-                        <input type="email" id="email" name="email"> <br>
+                        <input type="email" id="email" name="email" placeholder="example@email.com"> <br>
                         <label for="comments">Your Comments</label> <br>
-                        <textarea name="comments" id="comments"></textarea><br>
+                        <textarea name="comments" id="comments" rows="8" cols="50"></textarea><br>
                         <label><input type="checkbox" id="subscribe" name="subscribe">Add me to your email list</label><br>
                         <input type="hidden" id="send_to" name="send_to" value="yourEmailHere">
-                    </fieldset>
                 </form>
             </section>
             </main>
         <footer>
-            <p>© ariani 2022</p>
+            <p class="footer">© ariani 2022</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

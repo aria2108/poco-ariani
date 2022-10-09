@@ -1,0 +1,150 @@
+body {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+main, footer {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30pt;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* ---- grid ---- */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    /* grid-template-columns: auto auto auto auto;
+    grid-template-rows: 2fr; */
+    padding-bottom: 10px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    /* background-color: bisque; */
+    padding: 10px;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+article:first-child {
+    background-color: transparent;
+}
+article:nth-child(2) {
+    background-color: rgb(189, 217, 148);
+}
+article:nth-child(3) {
+    background-color: orange;
+}
+article:nth-child(4) {
+    background-color:burlywood;
+}
+
+/* --------form------------- */
+form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+input {
+    width: 400px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color:coral ;
+    width: 100px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub {
+    padding: 20px 0;
+    font-size: 20pt;
+    font-weight: 200;
+}
+/* ---- sticky-footer ---- */
+
+footer {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.footer {
+    background-color: coral;
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer > p {
+    padding: 10px;
+}
+
+.copyright {
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    main {
+        display: grid;
+    }
+    section:first-child{
+        order: 1;
+    }
+    
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .sign-up {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+    }
+}

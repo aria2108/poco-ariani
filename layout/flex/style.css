@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+main, footer {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40pt;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+p {
+    padding: 20px;
+}
+
+/* --------picture gallery------------- */
+.container {
+    display: flex;
+    padding: 0 4px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.content {
+    flex: 20em;
+    max-width: 20em;
+    padding: 0 4px;
+}
+
+.content img {
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media screen and (max-width:1500px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+/* --------form------------- */
+form {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+input {
+    width: 400px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color:coral ;
+    width: 100px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub {
+    padding: 20px 0;
+    font-size: 20pt;
+    font-weight: 200;
+}
+
+
+/* --------footer------------- */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer {
+    flex-shrink: 0;
+}
+.footer-p {
+    padding: 10px;
+}
