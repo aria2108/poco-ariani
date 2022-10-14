@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    top: 0;
+    width: 100%;
+}
+
+main, footer {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40pt;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    padding: auto;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    visibility: hidden;
+}
+/* --------picture gallery------------- */
+.container {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-left: 30px;
+}
+
+.content {
+    flex: 20em;    
+    max-width: 20em;
+    padding: 4px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(228, 228, 228);
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform 1s;
+}
+
+.content:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.content img {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1400px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+
+/* --------footer------------- */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.footer {
+    flex-shrink: 0;
+}
+.footer-p {
+    padding: 10px;
+}
