@@ -127,7 +127,7 @@ let personData = [
         name : "Sadettin Karatas", 
         age : 35, 
         origin : "Turkey", 
-        canton : "Bern", 
+        canton : "Geneva", 
         hobby : "Hiking",
     },
     {
@@ -158,23 +158,21 @@ let personData = [
 
 let container = document.getElementsByClassName("container")[0];
 let str = "";
-// str += "<div class='content'>";
 
 for (let i = 0; i < personData.length; i++) {
     let person = personData[i]
     str += "<div class = 'content' onclick='toggleBtn(this)'>"
     str += '<img src="' + person.imageURL + '">'
-    str += "<button>" + person.name + "</button>"
+    str += "<h3>" + person.name + "</h3>"
     str += "<p class = 'info'>" + `Hi, I am ${person.name} and am ${person.age} years old. Originally from ${person.origin}, currently live in canton ${person.canton}. In spare time, I like to do ${person.hobby}` + "</p>"
     str += "</div>"
 }
-// str += "</div>"
+
 container.innerHTML = str;
 
 
-
 function toggleBtn(e) {
-    console.log('function')
+    //console.log('function')
     let context = e.firstElementChild.nextElementSibling.nextElementSibling;
     if (context.style.visibility == "hidden") {
         context.style.visibility = "visible";
@@ -183,34 +181,56 @@ function toggleBtn(e) {
     }
 }
 
+function cantonAll() {
+let container = document.getElementsByClassName("container")[0];
+let str = "";
 
+for (let i = 0; i < personData.length; i++) {
+    let person = personData[i]
+    str += "<div class = 'content' onclick='toggleBtn(this)'>"
+    str += '<img src="' + person.imageURL + '">'
+    str += "<h3>" + person.name + "</h3>"
+    str += "<p class = 'info'>" + `Hi, I am ${person.name} and am ${person.age} years old. Originally from ${person.origin}, currently live in canton ${person.canton}. In spare time, I like to do ${person.hobby}` + "</p>"
+    str += "</div>"
+}
 
+container.innerHTML = str;
+};
+function cantonBern() {
 
-
-
-
-
-
-// let content = document.querySelectorAll("content")
-// content.onmouseover = function () {mouseOver()};
-// content.onmouseout = function () {mouseOut()};
-
-// function mouseOver() {
-//     content.style.backgroundColor = "red";
-// }
-// function mouseOut () {
-//     content.style.backgroundColor = "";
-// }
-
-// let personalData = {
-//     personName : "Ari",
-//     age : 35,
-//     city : "Zofingen"
-// };
-
-// let h2 = querySelector ("h2");
-// h2.onclick = function(){myFunction()};
-
-// function myFunction() {
-//     document.getElementById("info").innerHTML= personalData.personName + ", " + personalData.age + ", " + personalData.city;
-// }
+    let cantons = personData.filter(x => x.canton == "Bern");
+    
+    container.innerHTML = cantons.map((person) => {
+        return`
+            <div class = 'content' onclick='toggleBtn(this)'>
+            <img src=${person.imageURL}>
+            <h3> ${person.name} </h3>
+            <p class = 'info'>Hi, I am ${person.name} and am ${person.age} years old. Originally from ${person.origin}, currently live in canton ${person.canton}. In spare time, I like to do ${person.hobby}</p>
+            </div>
+            `
+    })
+};
+function cantonValais() {
+    let cantons = personData.filter(x => x.canton == "Valais");
+    container.innerHTML = cantons.map((person) => {
+        return`
+            <div class = 'content' onclick='toggleBtn(this)'>
+            <img src="${person.imageURL}" alt="">
+            <h3> ${person.name} </h3>
+            <p class = 'info'>Hi, I am ${person.name} and am ${person.age} years old. Originally from ${person.origin}, currently live in canton ${person.canton}. In spare time, I like to do ${person.hobby}</p>
+            </div>
+            `
+    })
+}
+function cantonZürich() {
+    let cantons = personData.filter(x => x.canton == "Zürich");
+    container.innerHTML = cantons.map((person) => {
+        return`
+            <div class = 'content' onclick='toggleBtn(this)'>
+            <img src="${person.imageURL}" alt="">
+            <h3> ${person.name} </h3>
+            <p class = 'info'>Hi, I am ${person.name} and am ${person.age} years old. Originally from ${person.origin}, currently live in canton ${person.canton}. In spare time, I like to do ${person.hobby}</p>
+            </div>
+            `
+    })
+};

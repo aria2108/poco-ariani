@@ -33,12 +33,16 @@ h1 {
     color: white;
     padding: 15px;
 }
-
+.canton-filter{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
 h2 {
     padding: auto;
 }
 
-button {
+h3 {
     border: none;
     outline: 0;
     display: inline-block;
@@ -57,6 +61,24 @@ button {
     padding: 20px;
     font-size: 18px;
     visibility: hidden;
+    bottom: 38px;
+    left: 0;
+    position: absolute;
+    background-color: #c4c0c080;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 /* --------picture gallery------------- */
 .container {
@@ -64,7 +86,7 @@ button {
     padding: 0;
     flex-wrap: wrap;
     justify-content:flex-start;
-    margin-left: 30px;
+    margin: auto 40px;
 }
 
 .content {
@@ -76,6 +98,8 @@ button {
     margin: 10px;
     border-radius: 20px;
     transition: transform 1s;
+    position: relative;
+    cursor: pointer;
 }
 
 .content:hover {
@@ -102,6 +126,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    margin-top: auto;
 }
 .footer {
     flex-shrink: 0;
