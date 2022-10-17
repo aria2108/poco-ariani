@@ -1,0 +1,28 @@
+
+body {
+    font-family: Serif;
+}
+ *{
+    box-sizing: border-box;
+  }	  
+	  
+	h1 {
+		text-align: center;
+		background-color: #1F5C68;
+		color: #ffffff;
+	}  
+  	img {
+	  width: 200px;
+	  display:block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  border-radius: 50%;
+	  width: 200px;
+	  height: 200px;
+  	}
+  	p {
+	  font-size: 18px;
+	  color: black;
+	  text-align: center;
+  	}
+  
