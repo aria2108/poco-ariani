@@ -1,0 +1,57 @@
+---- Euclid's algorithm ----
+
+Declare a variable gcd = 0
+
+1. Input a (positive integer)
+2. Input b (positive integer)
+
+3. Check If
+    - a & b positive Integer?
+if no, back to step 1
+
+4. Compare a and b
+5.    if a > b -> substract a - b and set a = a - b 
+6.    back to step 4
+7.    if a < b -> substract b - a and set b = b - a
+8.    back to step 4
+9.    if a = b Output GCD
+10. End
+
+// Example
+1. a = 60
+2. 6 = 45
+
+Step 4:
+
+60 > 45? --> a = 60 - 45, b = 45
+15 > 45? --> a = 15, b = 45 - 15 = 30
+15 > 30? --> a = 15, b = 30 - 15 = 15
+15 == 15 --> GCD = 15
+
+
+---- Euclidean algorithm ----
+
+1. Input a (positive integer)
+2. Input b (positive integer)
+
+3. Check If
+    - a & b positive Integer?
+if no, back to step 1
+
+4. Compare a and b
+5.    if a > b -> find mod a % b and set a = a % b 
+6.    back to step 4
+7.    if a < b -> substract b % a and set b = b % a
+8.    back to step 4
+9.    if a = 0 || b = 0 Output GCD
+10. End
+
+// Example
+1. a = 60
+2. 6 = 45
+
+Step 4:
+
+60 > 45? --> a = 60%45, b --> a = 15 --> (15,45)
+15 > 45? --> a = 15, b = 45%15 --> (15,0)
+b = 0 --> output GCD = 15

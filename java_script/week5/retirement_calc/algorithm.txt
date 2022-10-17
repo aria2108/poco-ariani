@@ -1,0 +1,12 @@
+
+function retired_calc ();
+    
+    input current age: digits integer where age > 0
+    input retire age : digits integer where age > 0
+    output: year_now and year_retired
+    set the years_left = retire age - current age
+    get the full year from today's date
+    year_retired = year_now + years_left
+    display output "It's " + year_now + " so you can retire in " + year_retired
+
+End

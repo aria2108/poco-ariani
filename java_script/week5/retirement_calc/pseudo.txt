@@ -1,0 +1,14 @@
+
+1. Inputs : 2 positive integer
+2. Procedures
+    1. Initialize variable current age
+    2. Initialize variable retirement age
+    3. Prompt "Enter your current age" store it in variable
+    4. Prompt "Enter your preffered retirement age store it in variable
+    5. Calculate age : substract age_retired from current age store it in years_left
+    6. Add years_left to the the current year.
+3. Output: It's "current year", so you can retire in "retirement year".
+4. End
+
+//Test case :
+1. If the input is empty or not a number

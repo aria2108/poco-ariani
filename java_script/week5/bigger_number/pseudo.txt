@@ -1,0 +1,14 @@
+
+1. Inputs : 2 positive integers
+2. Porocesdure 
+    1. Initialize variables for integers store it as A and B
+    2. Initialize a variable output
+    3. Prompt for integer A
+    4. Prompt for integer B
+    5. Validate if it's a number
+    6. Check if A or B is the greater number
+    7. if A greater than B, display output "The greater number of a and b is a."
+    8. Else, display output ""The smaller number of a and b is b.""
+    9. End
+
+    

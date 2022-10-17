@@ -1,0 +1,6 @@
+
+1. Inputs : User allowed to choose the languange by selecting from the dopdown menu to translate text " Hello World"
+2. Process + Output:
+    1. If user select "en" the text remain/doesn't change (default).
+    2. If user select "es" the output will be translated text in Spanish.
+    3. If user select "de" the output will be translated text in German.

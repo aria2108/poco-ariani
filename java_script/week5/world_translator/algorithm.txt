@@ -1,0 +1,16 @@
+
+funtion translate_text ()
+    input language = targeting the value from select menu
+    output = targeting paragraph tag and translate the text "Hello World" into several langueage 
+    (in this case en = English, es = Spanish, de = German)
+
+    switch (language.value) {
+        case "es = Spanish":
+            text in paragraph = "Hola Mundo!"
+            break;
+        case "de = Deutsch":
+            text in paragraph = "Hallo Welt!"ß
+            break;
+        default:
+            text in paragraph = "Hello World"
+    }

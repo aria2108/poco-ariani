@@ -1,0 +1,12 @@
+
+function compare (a,b)
+input a, b as integers.
+
+if (a > b) then
+    display output ("The greater number of " + a + " and " + b + " is " + a );
+} else if (a < b) then
+    display output ("The smaller number of " + a + " and " + b + " is " + a );
+} else if (a = b) then
+    display output ("They are equal")   
+} else 
+    display output ("Input is not a number")
