@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">My Book List</h1>
+    <ul id="list_main">
+    </ul>
+    <script>
+        var books = [
+        {
+        booksCoverURL : "./img/The Design of EveryDay Things.webp",
+        title: 'The Design of EveryDay Things',
+        author: 'Don Norman',
+        alreadyRead: false
+        }, 
+        {
+        booksCoverURL : "./img/The Most Human Human.jpeg",
+        title: 'The Most Human Human',
+        author: 'Brian Christian',
+        alreadyRead: true
+        }
+    ];
+
+    let booksTitle;
+    let booksAuthor;
+    let booksImage;
+    
+
+    for (let i = 0; i <= books.length - 1; i++) {
+        //title-author
+
+        booksTitle = document.createElement("h3");
+        booksAuthor = document.createElement("p");
+        
+        document.body.appendChild(booksTitle);
+        document.body.appendChild(booksAuthor);
+        
+        booksTitle.innerHTML = books[i].title;
+        booksAuthor.innerHTML = "Author : " + books[i].author;
+        
+    
+        //ul
+        
+        let listItem = document.createElement('li');
+        let listMain = document.getElementById('list_main');
+
+        listMain.appendChild(listItem);
+        listItem.appendChild(booksTitle);
+        listItem.appendChild(booksAuthor);
+
+        //img
+
+        booksImage = document.createElement('img')
+        booksImage.src = books[i].booksCoverURL;
+        listItem.appendChild(booksImage);
+
+        //style
+
+        const checkBooksRead = books[i].alreadyRead
+        if(checkBooksRead === true){
+            booksTitle.style.color = "violet";
+        }else {
+            booksTitle.style.color = "black";
+        }
+    };
+
+
+    </script>
+</body>
+</html>
