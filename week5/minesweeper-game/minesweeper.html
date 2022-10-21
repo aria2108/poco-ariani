@@ -117,13 +117,16 @@
         //                Add a BOMBS_COUNT constant so that you can easily change the amount of bombs placed. Put it next to the
         //                other constants.
         //
+    
 
-        for (let i=0; i <= BOMBS_COUNT; i++) {
+        for (let i=0; i < BOMBS_COUNT; i++) {
             nrow = Math.floor(Math.random()*ROWS_COUNT)
             ncol = Math.floor(Math.random()*COLS_COUNT)
+            if (cells[nrow][ncol].isBomb)
+            continue
             cells[nrow][ncol].isBomb = true
+        
         }
-
 
         // Once the game has been initialized, we "render" it.
         render();
@@ -137,7 +140,7 @@
             //
             // TODO: Task 5 - Reveal cells when clicked.
             //
-        
+        cells[row][col].discovered = true;
             //
             // TODO: Task 6 - Discover neighbor cells recursively, as long as there are no adjacent bombs to the current cell.
             //
@@ -161,16 +164,42 @@
             // TODO: Task 4 - Adjacent bombs are bombs in cells touching our cell (also diagonally). Implement this function
             //                so that it returns the count of adjacent cells with bombs in them. 
             //
-            
-            if (col > 0) {
-                if (cells[row][col-1].isBomb == true) {
-                return row;
+                let count = 0;
+                //left
+                if (col > 0 && cells[row][col-1].isBomb) {
+                    count += 1;
                 }
-                else {
-                    return 0;
+                //right
+                if(col < COLS_COUNT-1 && cells[row][col+1].isBomb) {
+                    count += 1;
                 }
+                //top
+                if(row > 0 && cells[row-1][col].isBomb){
+                    count += 1;
+                }
+                //bottom
+                if(row < ROWS_COUNT-1 && cells[row+1][col].isBomb){
+                    count += 1;
+                }
+                //top right
+                if(row > 0 && col < COLS_COUNT-1 && cells[row-1][col+1]){
+                    count += 1;
+                }
+                //top left
+                if(col > 0 && row > 0 && cells[row-1][col-1].isBomb){
+                    count += 1;
+                }
+                //bottom right
+                if(row < ROWS_COUNT-1 && col < COLS_COUNT-1 && cells[row+1][col+1].isBomb) {
+                    count += 1;
+                }
+                //bottom left
+                if(row < ROWS_COUNT-1 && col > 0 && cells[row+1][col-1].isBomb) {
+                    count += 1;
+                }
+                return count
             }
-        }
+        
 
         function getBombsCount() {
             //
