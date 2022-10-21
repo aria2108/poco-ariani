@@ -209,6 +209,7 @@ function cantonBern() {
             </div>
             `
     })
+    .join(" ");
 };
 function cantonValais() {
     let cantons = personData.filter(x => x.canton == "Valais");
@@ -221,6 +222,7 @@ function cantonValais() {
             </div>
             `
     })
+    .join(" ");
 }
 function cantonZürich() {
     let cantons = personData.filter(x => x.canton == "Zürich");
@@ -233,4 +235,5 @@ function cantonZürich() {
             </div>
             `
     })
+    .join(" ");
 };
