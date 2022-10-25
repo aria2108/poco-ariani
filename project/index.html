@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style/style.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap" rel="stylesheet">
 
         <title>nextadventure</title>
     </head>
     <body>
+        <div class="site-wrapper">
         <header id="home">
             <section class="navbar">
                 <div class="logo">
@@ -63,28 +64,24 @@
                     <h2>About</h2>
                     <p>Hi, I am Ari. Enjoy exploring a new place and food. I am happy to share my experiences and get a new experience from others! Let's get in touch and share your adventures too. Maybe you have found a new gem to be explore in your surrounding.</p>
                 </div>
-            </section>
-
-            <section id="stayintouch">
-
-                <!-- <form>
-                    <div class="stay-main">
-                    <h2>Stay in Touch</h2>
-                    <label for="name">Your name:</label> <br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email</label> <br>
-                    <input type="email" id="email" name="email" placeholder="example@email.com"> <br>
-                    <label for="comments">Your Comments</label> <br>
-                    <textarea name="comments" id="comments" rows="8" cols="50"></textarea><br>
-                     <label><input type="checkbox" id="subscribe" name="subscribe">Add me to your email list</label><br>
-                    <input type="hidden" id="send_to" name="send_to" value="yourEmailHere"> 
-                </form> -->
-            </div>
-            </section>
             </main>
-        <footer>
-            <p class="footer">© ariani 2022</p>
+        <footer class="footer">
+            <div class="footer-right" id="stayintouch">
+                <p>Stay in touch : </p>
+                <a href="https://github.com/aria2108" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="mailto:ari.ariani@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a class="link-home" href="#home">Home</a>
+                    <a href="#adventure">The Adventure</a>
+                    <a href="#about">About</a>
+                </div>
+                <p> ariani © 2022</p>
+            </div>
         </footer>
+    </div>
         <script src="script.js"></script>
     </body>
 </html>

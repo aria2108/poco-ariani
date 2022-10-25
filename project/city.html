@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/city_style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/city_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
 
     <title>nextadventure</title>
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+    <div class="site-wrapper">
+      <header>
         <section class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo-new.jpg" alt="logo"></a>
-            </div>
-            <input id="ham-menu"type="checkbox">
-            <label class="menu-btn-container" for="ham-menu">
-                <div class="menu-btn"></div>
-            </label>
-            
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <!-- <li><a href="#adventure">The Adventure</a></li> -->
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#stayintouch">Stay in touch</a></li>
-                </ul>
-        </section>    
-    </header>
-    <main>
-        <section class="bg-img">
-            <div class="bg-text">
-                <h1>Old Town Road</h1>
-                <!-- <button class="bg-button">⋁</button> -->
-            </div>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo-new.jpg" alt="logo" /></a>
+          </div>
+          <input id="ham-menu" type="checkbox" />
+          <label class="menu-btn-container" for="ham-menu">
+            <div class="menu-btn"></div>
+          </label>
+
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#adventure">The Adventure</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#stayintouch">Stay in touch</a></li>
+          </ul>
         </section>
+      </header>
+      <main>
+        <section class="bg-img">
+          <div class="bg-text">
+            <h1>Old Town Road</h1>
+          </div>
+        </section>
+      </main>
 
+      <footer class="footer">
+        <div class="footer-right" id="stayintouch">
+          <p>Stay in touch :</p>
+          <a href="https://github.com/aria2108" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="mailto:ari.ariani@gmail.com"
+            ><i class="fa fa-envelope" aria-hidden="true"></i
+          ></a>
+        </div>
 
-        
-    </main>
-</body>
+        <div class="footer-left">
+          <div class="footer-links">
+            <a class="link-home" href="index.html#home">Home</a>
+            <a href="index.html#adventure">The Adventure</a>
+            <a href="index.html#about">About</a>
+          </div>
+          <p>ariani © 2022</p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
