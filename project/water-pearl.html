@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style/waterpearl_style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap"
       rel="stylesheet"
@@ -20,41 +21,82 @@
   <body>
     <div class="site-wrapper">
       <header>
-        <section class="navbar">
-          <div class="logo">
-            <a href="index.html"><img src="img/logo-new.jpg" alt="logo" /></a>
-          </div>
-          <input id="ham-menu" type="checkbox" />
-          <label class="menu-btn-container" for="ham-menu">
-            <div class="menu-btn"></div>
-          </label>
-
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#adventure">The Adventure</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#stayintouch">Stay in touch</a></li>
-          </ul>
-        </section>
-      </header>
-      <main>
         <section class="bg-img">
           <div class="bg-text">
             <h1>Go with the flow</h1>
-            <!-- <button class="bg-button">⋁</button> -->
           </div>
+          <nav class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo-new.jpg" alt="logo" /></a>
+            </div>
+            <input id="ham-menu" type="checkbox" />
+            <label class="menu-btn-container" for="ham-menu">
+              <div class="menu-btn"></div>
+            </label>
+
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#adventure">The Adventure</a></li>
+              <li><a href="index.html#about">About</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <main>
+        <section class="row">
+          <article class="main">
+            <img src="img/water_pearl/Giesbach1.JPG" alt="giesbachfall" class="main-img" />
+            <div class="info">
+              <h3 class="info-title">Giesbachfall<span class='down fa-icon'></span></h3>
+              <div class="info-body">
+                <p>
+                  The Giessbach brook tumbles in 14 stages, over a length of 500 meters and out of the high valleys of the Faulhorn area down to Lake Brienz. My favourite part of this trip was when we hiked up and found ourself behind the water without even being wet. The Giessbachbahn was established in 1879 and is the oldest funicular in Europe that is only used by tourists. To reach this beautiful waterfall, we can go by train or by ship. I personally like to take ship while enjoying the panorama of Giesbachfall from lake of Brienz and slowly become closer.
+                </p>
+              </div>
+            </div>
+            <hr class="line" />
+
+            <img src="img/water_pearl/Reichenbach3.png" alt="reichenbachfall" class="main-img" />
+            <div class="info">
+              <h3 class="info-title">Reichenbachfall<span class='down fa-icon'></span></h3>
+              <div class="info-body">
+                <p>
+                  For Sherlock-Holmes-Fans, this trip is a must. This iconic waterfall is situated in Meiringen and 120m height. It was mentioned in the crime history "The last problem" written by Sir Arthur Conan Doyle. This story, set in 1891, introduced Holmes's archenemy, the criminal mastermind Professor Moriarty.t was intended to be the final Holmes story, ending with the character's death, but Conan Doyle was later persuaded to revive Holmes for additional stories and novels. We can see some memorial of this infamous fictive figure included statue and museum. The hiking path towards the waterfall is lovely. I personally, like to walk up and go down with the cabel car. From the cable car, we will see the beautiful view of Meiringen.
+                </p>
+              </div>
+            </div>
+            <hr class="line" />
+          </article>
+          <article class="side">
+            <h3>More Places</h3>
+            <p>Explore also these category</p>
+            <div class="side-link">
+              <a href="mountain.html"
+                ><img src="img/mountain/niederhorn4.jpeg" alt="mountain"
+              /></a>
+              <div class="caption">
+                <a href="water-pearl.html"><h5>MOUNTAIN</h5></a>
+                <p>Let's go with the flow</p>
+              </div>
+            </div>
+            <div class="side-link">
+              <a href="city.html"><img src="img/city/Zofingen3.JPG" alt="city" /></a>
+              <div class="caption">
+                <a href="city.html"><h5>CITY VIEW</h5></a>
+                <p>Explore a scenic old town</p>
+              </div>
+            </div>
+          </article>
+          </article>
         </section>
       </main>
 
       <footer class="footer">
         <div class="footer-right" id="stayintouch">
           <p>Stay in touch :</p>
-          <a href="https://github.com/aria2108" target="_blank"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a href="mailto:ari.ariani@gmail.com"
-            ><i class="fa fa-envelope" aria-hidden="true"></i
-          ></a>
+          <a href="https://github.com/aria2108" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="mailto:ari.ariani@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
 
         <div class="footer-left">
@@ -67,5 +109,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

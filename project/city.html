@@ -5,14 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/city_style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
 
     <title>nextadventure</title>
   </head>
@@ -20,40 +17,80 @@
   <body>
     <div class="site-wrapper">
       <header>
-        <section class="navbar">
-          <div class="logo">
-            <a href="index.html"><img src="img/logo-new.jpg" alt="logo" /></a>
-          </div>
-          <input id="ham-menu" type="checkbox" />
-          <label class="menu-btn-container" for="ham-menu">
-            <div class="menu-btn"></div>
-          </label>
-
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#adventure">The Adventure</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#stayintouch">Stay in touch</a></li>
-          </ul>
-        </section>
-      </header>
-      <main>
         <section class="bg-img">
           <div class="bg-text">
             <h1>Old Town Road</h1>
           </div>
+
+          <nav class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="img/logo-new.jpg" alt="logo" /></a>
+            </div>
+            <input id="ham-menu" type="checkbox" />
+            <label class="menu-btn-container" for="ham-menu">
+              <div class="menu-btn"></div>
+            </label>
+
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#adventure">The Adventure</a></li>
+              <li><a href="index.html#about">About</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+
+      <main>
+        <section class="row">
+          <article class="main">
+            <img src="img/city/Baden3.JPG" class="main-img" />
+            <div class="info">
+              <h3 class="info-title">Baden<span class='down fa-icon'></span></h3>
+              <div class="info-body">
+                <p>
+                  It is the main town or seat of the district of Baden in the canton of Aargau. Located 25 km (16 mi) northwest of Zürich in the Limmat Valley (Limmattal) mainly on the western side of the Limmat, its mineral hot springs have been famed since at least the Roman era. They have hot springs which open publicly. This is actually my favourite part of this city. Besides for relaxation, it is also rich in minerals that bring many health benefits. The hot spring is part of the hiking trail that I did. It was fun hiking trail as you also can play some game and if you are lucky you can win a prize. Visit <a href="https://limmattrail.ch/" target="_blank" rel="noopener noreferrer" class="link-para">Limmattrail</a> for more info about this hiking trail. 
+                </p>
+              </div>
+            </div>
+            <hr class="line" />
+
+            <img src="img/city/Zofingen1.JPG" class="main-img" />
+            <div class="info">
+              <h3 class="info-title">Zofingen<span class='down fa-icon'></span></h3>
+              <div class="info-body">
+                <p>
+                  Zofingen is a city in the canton of Aargau in Switzerland. It is the capital of the district of Zofingen. Zofingen is a walled city and home of an ancient monastic settlement. It is also the city where I live now. It has a beautiful old town and offers many cultural events along the year. It also become a host of the biggest organic market in Europe every Summer. Zofingen offers many posibilities of hiking pathway. If I don't want to go too far, my favourite destination is the hill called <em>Heiternplatz</em> It is pretty closed to where I live and we can see the view of the whole city from above. There is also wildlife conservatory on the way there, where you can see deers running wild, bambi, wild boar and many more. 
+                </p>
+              </div>
+            </div>
+            <hr class="line" />
+          </article>
+          <article class="side">
+            <h3>More Places</h3>
+            <p>Explore also these category</p>
+            <div class="side-link">
+              <a href="water-pearl.html"><img src="img/water_pearl/Giesbach5.JPG" alt="lake"/></a>
+              <div class="caption">
+                <a href="water-pearl.html"><h5>WATER PEARL</h5></a>
+                <p>Let's go with the flow</p>
+              </div>
+            </div>
+            <div class="side-link">
+              <a href="mountain.html"><img src="img/mountain/niederhorn3.jpeg" alt="city"/></a>
+              <div class="caption">
+                <a href="mountain.html"><h5>MOUNTAIN</h5></a>
+                <p>Explore a scenic old town</p>
+              </div>
+            </div>
+          </article>
         </section>
       </main>
 
       <footer class="footer">
         <div class="footer-right" id="stayintouch">
           <p>Stay in touch :</p>
-          <a href="https://github.com/aria2108" target="_blank"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a href="mailto:ari.ariani@gmail.com"
-            ><i class="fa fa-envelope" aria-hidden="true"></i
-          ></a>
+          <a href="https://github.com/aria2108" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="mailto:ari.ariani@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         </div>
 
         <div class="footer-left">
@@ -66,5 +103,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
