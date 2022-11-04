@@ -1,0 +1,24 @@
+Input :
+    1. User input the to do list
+
+Output :
+    1. Display the tasks list, after adding, deleting or updating
+
+Process :
+    1. Display button that user can choose between :
+        a. Add new task
+        b. Delete task
+        c. Mark task as done
+    
+    2. IF choice == add new task
+            DISPLAY text-box and user can write a new task
+            DISPLAY the new list under the text box
+        ELSE IF choice == delete task 
+            DISPLAY delete button next to the list
+            UPDATE the list and the task deleted dissapear
+        ELSE IF == mark task as done
+            DISPLAY the task with cross line
+        ELSE 
+            DISPLAY the list
+
+    3. Exit

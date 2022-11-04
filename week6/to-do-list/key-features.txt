@@ -1,0 +1,15 @@
+1. The key features :
+    Mandatory : 
+    - Adding a new task
+    - Deleting task
+    - Mark the task as done 
+    - Enable to undone the task
+
+2. Nice to have :
+    - Updating the task description
+    - Able to add images, emoji, icons
+    - Reminders
+    - Deadlines
+    - Sorting the list by Deadlines
+    - Sounds for completed task, reminders
+
