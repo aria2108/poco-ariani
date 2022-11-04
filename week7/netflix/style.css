@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+
+  .bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  button {
+    border: none;
+    text-decoration: none;
+  }
+
+  /* ---navbar--- */
+
+  .signin {
+    background-color: #e41212;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .logo img {
+    margin: 10px;
+    width: 8em;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .menu-right {
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: row;
+    position: fixed;
+    right: 0;
+  }
+
+  .fa-icon::after {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  .down, 
+  .dropbtn::after {
+    font: var(--fa-font-solid);
+    content: '\f107';
+    float: right;
+    margin-left: 5px;
+  }
+
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .drop-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .drop-content a {
+    font-size: 14px;
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+  }
+
+  .drop-content a:hover {
+    color: #a22121;
+    
+  }
+
+  .dropbtn:hover
+  .drop-content {
+    display: block;
+    /* flex-direction: column; */
+  }
+
+  
+
+  /* ---- form ---- */
+
+  h1, h4, p {
+    color: white;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 30px 0;
+  }
+
+  h4, p {
+    margin: 10px 0;
+  }
+
+  h4 {
+    font-weight: 100;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  input {
+    width: 35em;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+
+  .get-started {
+    background-color: #e41212;
+    color: white;
+    padding: 9px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .get-started::after {
+    font: var(--fa-font-solid);
+    content: '\f105';
+    float: right;
+    margin-left: 8px;
+  }
