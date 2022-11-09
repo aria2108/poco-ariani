@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+header {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 40px 20px 40px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+
+input {
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-bottom: solid 2px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+button {
+    padding: 10px 15px 10px 15px;
+    margin: 20px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+button:hover {
+    background-color: #0084ff;
+    cursor: pointer;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.weather-info {
+    margin: 20px;
+}
